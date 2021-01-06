@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.IOException;
 
 /**
  * File的静态方法
@@ -6,18 +7,18 @@ import java.io.File;
  * File 的常用方法
  */
 public class demo01 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         show();
     }
 
-    public static void show(){
+    public static void show() throws IOException{
         //构造方法
         File f1 = new File("a.txt");
         System.out.println(f1);
         File parent = new File("//Users//zhangpeishi//");
         File f2 = new File(parent,"Desktop");
         System.out.println(f2);
-        File  f3 = new File("//Users//zhangpeishi//","Desktop//1.txt");
+        File  f3 = new File("//Users//zhangpeishi//","Desktop//1//2.txt");
         System.out.println(f3);
 
         //方法
@@ -26,8 +27,11 @@ public class demo01 {
 
         //..............
         System.out.println(f3.exists());
-        //创建文件方法
-
+        //创建文件,文件夹方法
+        System.out.println(f1.createNewFile());
+        System.out.println(f3.mkdirs());
+        //删除文件 文件夹，返回值都是Boolean
+        System.out.println(f1.delete());
 
     }
 }
