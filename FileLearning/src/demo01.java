@@ -30,7 +30,7 @@ public class demo01 {
         //创建文件,文件夹方法
         System.out.println(f1.createNewFile());
         System.out.println(f3.mkdirs());
-        //删除文件 文件夹，返回值都是Boolean
+        //删除文件 文件夹，返回值都是Boolean  直接从硬盘删除 不会走回收站
         System.out.println(f1.delete());
 
     }
