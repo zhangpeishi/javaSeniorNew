@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ExceptionLearning/ExceptionLearning.iml" filepath="$PROJECT_DIR$/ExceptionLearning/ExceptionLearning.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileLearning/FileLearning.iml" filepath="$PROJECT_DIR$/FileLearning/FileLearning.iml" />
       <module fileurl="file://$PROJECT_DIR$/IOLearning/IOLearning.iml" filepath="$PROJECT_DIR$/IOLearning/IOLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LamdaLearning/LamdaLearning.iml" filepath="$PROJECT_DIR$/LamdaLearning/LamdaLearning.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaSeniorLearning.iml" filepath="$PROJECT_DIR$/javaSeniorLearning.iml" />
     </modules>
   </component>
