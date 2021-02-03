@@ -1,6 +1,6 @@
 package day01;
 
-public class TestStop implements Runnable{
+public class TestStop extends Thread{
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
@@ -12,10 +12,10 @@ public class TestStop implements Runnable{
     public static void main(String[] args) {
 
         TestStop ts = new TestStop();
-        Thread t1 = new Thread(ts);
-        t1.start();
-//        for (int i = 0; i < 100; i++) {
-//            System.out.println("主线程 ：" + i);
-//       }
+
+        ts.start();
+        for (int i = 0; i < 100; i++) {
+            System.out.println("主线程 ：" + i);
+       }
     }
 }
